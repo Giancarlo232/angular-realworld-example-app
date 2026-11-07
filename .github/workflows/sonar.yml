@@ -28,7 +28,6 @@ jobs:
 
       - name: Pruebas con cobertura
         run: npx ng test --watch=false --browsers=ChromeHeadless --code-coverage
-        continue-on-error: true
 
       - name: Analisis SonarQube Cloud
         uses: SonarSource/sonarqube-scan-action@v6
